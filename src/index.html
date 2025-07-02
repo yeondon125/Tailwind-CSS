@@ -49,10 +49,21 @@
             </div>
           </div>
 
-          <div
-            class="flex-col justify-center flex flex-wrap w-[484px] text-white"
-          >
-            <input type="email" />
+          <div class="flex-col flex flex-wrap w-[484px] text-black">
+            <label
+              for="username"
+              class="block mb-1 text-white"
+              style="display: none"
+              >이메일 또는 휴대전화</label
+            >
+            <input
+              id="email"
+              name="username"
+              type="text"
+              autocomplete="email"
+              placeholder="이메일 또는 휴대전화"
+              class="bg-black text-white border border-white outline-offset-1 px-2 py-1 rounded w-[458px] h-[54px] mt-[72px]"
+            />
           </div>
         </div>
       </div>
