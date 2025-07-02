@@ -4,13 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../dist/output.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <title>Tailwind</title>
   </head>
-  <body class="bg-darkgray">
-    <div
-      class="flex-col justify-center items-center h-screen flex mx-[20.37vw]"
-    >
-      <div class="bg-bl p-[36px]">
+  <body class="bg-darkgray font-sans">
+    <div class="flex-col justify-center items-center h-screen flex mx-[440px]">
+      <div class="bg-bl p-[36px] w-[1040px]">
         <div class="flex flex-col">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -39,7 +41,7 @@
           </svg>
 
           <div class="flex flex-row gap-[48px]">
-            <div class="flex-col justify-center flex flex-wrap w-[484px]">
+            <div class="flex-col flex flex-wrap w-[484px]">
               <!-- 텍스트 -->
               <div class="text-white">
                 <h1 class="text-5xl mt-[24px] mb-[16px]">로그인</h1>
@@ -66,14 +68,19 @@
                 class="bg-black text-white border border-white outline-offset-1 rounded w-[100%] h-[54px] mt-[24px] px-[15px] py-[13px]"
               />
               <div class="text-ap text-sm mb-[32px]">이메일을 잊으셨나요?</div>
-              <div class="bg-white p-[12px]">
-                내 컴퓨터가 아닌가요? 게스트 모드를 사용하여 비공개로
-                로그인하세요. 게스트 모드 사용 방법 자세히 알아보기
+              <div class="bg-bl text-sm pt-[9px]">
+                <span class="text-c4"
+                  >내 컴퓨터가 아닌가요? 게스트 모드를 사용하여 비공개로
+                  로그인하세요.</span
+                >
+                <span class="text-ap"
+                  >게스트 모드 사용 방법 자세히 알아보기</span
+                >
               </div>
             </div>
           </div>
         </div>
-        <div class="bg-white">버튼이 들어갈 곳</div>
+        <div class="text-white flex justify-end"><button>다음</button></div>
       </div>
 
       <!-- 아래요소 -->
