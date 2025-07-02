@@ -11,64 +11,73 @@
       class="flex-col justify-center items-center h-screen flex mx-[20.37vw]"
     >
       <div class="bg-bl p-[36px]">
-        <div class="flex flex-row gap-[48px]">
-          <div class="flex-col justify-center flex flex-wrap w-[484px]">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="48"
-              height="48"
-              viewBox="0 0 40 48"
-              aria-hidden="true"
-              jsname="jjf7Ff"
-            >
-              <path
-                fill="#4285F4"
-                d="M39.2 24.45c0-1.55-.16-3.04-.43-4.45H20v8h10.73c-.45 2.53-1.86 4.68-4 6.11v5.05h6.5c3.78-3.48 5.97-8.62 5.97-14.71z"
-              ></path>
-              <path
-                fill="#34A853"
-                d="M20 44c5.4 0 9.92-1.79 13.24-4.84l-6.5-5.05C24.95 35.3 22.67 36 20 36c-5.19 0-9.59-3.51-11.15-8.23h-6.7v5.2C5.43 39.51 12.18 44 20 44z"
-              ></path>
-              <path
-                fill="#FABB05"
-                d="M8.85 27.77c-.4-1.19-.62-2.46-.62-3.77s.22-2.58.62-3.77v-5.2h-6.7C.78 17.73 0 20.77 0 24s.78 6.27 2.14 8.97l6.71-5.2z"
-              ></path>
-              <path
-                fill="#E94235"
-                d="M20 12c2.93 0 5.55 1.01 7.62 2.98l5.76-5.76C29.92 5.98 25.39 4 20 4 12.18 4 5.43 8.49 2.14 15.03l6.7 5.2C10.41 15.51 14.81 12 20 12z"
-              ></path>
-            </svg>
+        <div class="flex flex-col">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="48"
+            height="48"
+            viewBox="0 0 40 48"
+            aria-hidden="true"
+            jsname="jjf7Ff"
+          >
+            <path
+              fill="#4285F4"
+              d="M39.2 24.45c0-1.55-.16-3.04-.43-4.45H20v8h10.73c-.45 2.53-1.86 4.68-4 6.11v5.05h6.5c3.78-3.48 5.97-8.62 5.97-14.71z"
+            ></path>
+            <path
+              fill="#34A853"
+              d="M20 44c5.4 0 9.92-1.79 13.24-4.84l-6.5-5.05C24.95 35.3 22.67 36 20 36c-5.19 0-9.59-3.51-11.15-8.23h-6.7v5.2C5.43 39.51 12.18 44 20 44z"
+            ></path>
+            <path
+              fill="#FABB05"
+              d="M8.85 27.77c-.4-1.19-.62-2.46-.62-3.77s.22-2.58.62-3.77v-5.2h-6.7C.78 17.73 0 20.77 0 24s.78 6.27 2.14 8.97l6.71-5.2z"
+            ></path>
+            <path
+              fill="#E94235"
+              d="M20 12c2.93 0 5.55 1.01 7.62 2.98l5.76-5.76C29.92 5.98 25.39 4 20 4 12.18 4 5.43 8.49 2.14 15.03l6.7 5.2C10.41 15.51 14.81 12 20 12z"
+            ></path>
+          </svg>
 
-            <!-- 텍스트 -->
-            <div class="text-white">
-              <h1 class="text-5xl mt-[24px] mb-[16px]">로그인</h1>
-              <span class="">
-                Google 계정으로 로그인합니다. 이 계정은 브라우저의 다른 Google
-                앱에서 사용할 수 있습니다.
-              </span>
+          <div class="flex flex-row gap-[48px]">
+            <div class="flex-col justify-center flex flex-wrap w-[484px]">
+              <!-- 텍스트 -->
+              <div class="text-white">
+                <h1 class="text-5xl mt-[24px] mb-[16px]">로그인</h1>
+                <span class="">
+                  Google 계정으로 로그인합니다. 이 계정은 브라우저의 다른 Google
+                  앱에서 사용할 수 있습니다.
+                </span>
+              </div>
+            </div>
+
+            <div class="flex-col flex flex-wrap w-[484px] text-black">
+              <label
+                for="username"
+                class="block mb-1 text-white"
+                style="display: none"
+                >이메일 또는 휴대전화</label
+              >
+              <input
+                id="email"
+                name="username"
+                type="text"
+                autocomplete="email"
+                placeholder="이메일 또는 휴대전화"
+                class="bg-black text-white border border-white outline-offset-1 rounded w-[100%] h-[54px] mt-[24px] px-[15px] py-[13px]"
+              />
+              <div class="text-ap text-sm mb-[32px]">이메일을 잊으셨나요?</div>
+              <div class="bg-white p-[12px]">
+                내 컴퓨터가 아닌가요? 게스트 모드를 사용하여 비공개로
+                로그인하세요. 게스트 모드 사용 방법 자세히 알아보기
+              </div>
             </div>
           </div>
-
-          <div class="flex-col flex flex-wrap w-[484px] text-black">
-            <label
-              for="username"
-              class="block mb-1 text-white"
-              style="display: none"
-              >이메일 또는 휴대전화</label
-            >
-            <input
-              id="email"
-              name="username"
-              type="text"
-              autocomplete="email"
-              placeholder="이메일 또는 휴대전화"
-              class="bg-black text-white border border-white outline-offset-1 px-2 py-1 rounded w-[458px] h-[54px] mt-[72px]"
-            />
-          </div>
         </div>
+        <div class="bg-white">버튼이 들어갈 곳</div>
       </div>
+
       <!-- 아래요소 -->
-      <div></div>
+      <div class="bg-white">asdf</div>
     </div>
   </body>
 </html>
