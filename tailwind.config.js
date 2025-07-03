@@ -8,6 +8,8 @@ module.exports = {
         bl: "#0E0E0E", // 원하는 이름으로 등록
         ap: "#A8C7FA",
         c4: "#c4c7c5",
+        a06: "#062E6f",
+        b57: "#C0CFF7",
       },
       fontFamily: {
         sans: ["Roboto", "sans-serif"],
