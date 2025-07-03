@@ -12,43 +12,45 @@
   </head>
   <body class="bg-darkgray font-sans">
     <div class="flex-col justify-center items-center h-screen flex mx-[440px]">
-      <div class="bg-bl p-[36px] w-[1040px]">
+      <div class="bg-bl p-[36px] w-[1040px] rounded-[46px]">
         <div class="flex flex-col">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="48"
-            height="48"
-            viewBox="0 0 40 48"
-            aria-hidden="true"
-            jsname="jjf7Ff"
-          >
-            <path
-              fill="#4285F4"
-              d="M39.2 24.45c0-1.55-.16-3.04-.43-4.45H20v8h10.73c-.45 2.53-1.86 4.68-4 6.11v5.05h6.5c3.78-3.48 5.97-8.62 5.97-14.71z"
-            ></path>
-            <path
-              fill="#34A853"
-              d="M20 44c5.4 0 9.92-1.79 13.24-4.84l-6.5-5.05C24.95 35.3 22.67 36 20 36c-5.19 0-9.59-3.51-11.15-8.23h-6.7v5.2C5.43 39.51 12.18 44 20 44z"
-            ></path>
-            <path
-              fill="#FABB05"
-              d="M8.85 27.77c-.4-1.19-.62-2.46-.62-3.77s.22-2.58.62-3.77v-5.2h-6.7C.78 17.73 0 20.77 0 24s.78 6.27 2.14 8.97l6.71-5.2z"
-            ></path>
-            <path
-              fill="#E94235"
-              d="M20 12c2.93 0 5.55 1.01 7.62 2.98l5.76-5.76C29.92 5.98 25.39 4 20 4 12.18 4 5.43 8.49 2.14 15.03l6.7 5.2C10.41 15.51 14.81 12 20 12z"
-            ></path>
-          </svg>
+          <div class="mb-[24px]">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="48"
+              height="48"
+              viewBox="0 0 40 48"
+              aria-hidden="true"
+              jsname="jjf7Ff"
+            >
+              <path
+                fill="#4285F4"
+                d="M39.2 24.45c0-1.55-.16-3.04-.43-4.45H20v8h10.73c-.45 2.53-1.86 4.68-4 6.11v5.05h6.5c3.78-3.48 5.97-8.62 5.97-14.71z"
+              ></path>
+              <path
+                fill="#34A853"
+                d="M20 44c5.4 0 9.92-1.79 13.24-4.84l-6.5-5.05C24.95 35.3 22.67 36 20 36c-5.19 0-9.59-3.51-11.15-8.23h-6.7v5.2C5.43 39.51 12.18 44 20 44z"
+              ></path>
+              <path
+                fill="#FABB05"
+                d="M8.85 27.77c-.4-1.19-.62-2.46-.62-3.77s.22-2.58.62-3.77v-5.2h-6.7C.78 17.73 0 20.77 0 24s.78 6.27 2.14 8.97l6.71-5.2z"
+              ></path>
+              <path
+                fill="#E94235"
+                d="M20 12c2.93 0 5.55 1.01 7.62 2.98l5.76-5.76C29.92 5.98 25.39 4 20 4 12.18 4 5.43 8.49 2.14 15.03l6.7 5.2C10.41 15.51 14.81 12 20 12z"
+              ></path>
+            </svg>
+          </div>
 
           <div class="flex flex-row gap-[48px]">
             <div class="flex-col flex flex-wrap w-[484px]">
               <!-- 텍스트 -->
               <div class="text-white">
-                <h1 class="text-5xl mt-[24px] mb-[16px]">로그인</h1>
-                <span class="">
+                <span class="text-[44px]">로그인</span>
+                <div class="mt-[16px]">
                   Google 계정으로 로그인합니다. 이 계정은 브라우저의 다른 Google
                   앱에서 사용할 수 있습니다.
-                </span>
+                </div>
               </div>
             </div>
 
@@ -67,7 +69,9 @@
                 placeholder="이메일 또는 휴대전화"
                 class="bg-black text-white border border-white outline-offset-1 rounded w-[100%] h-[54px] mt-[24px] px-[15px] py-[13px]"
               />
-              <div class="text-ap text-sm mb-[32px]">이메일을 잊으셨나요?</div>
+              <div class="text-ap text-sm mb-[32px] pt-[9px]">
+                이메일을 잊으셨나요?
+              </div>
               <div class="bg-bl text-sm pt-[9px]">
                 <span class="text-c4"
                   >내 컴퓨터가 아닌가요? 게스트 모드를 사용하여 비공개로
@@ -81,9 +85,9 @@
           </div>
         </div>
         <div class="text-white flex justify-end mt-[32px]">
-          <button class="text-ap px-[16px] mt-[6px]">계정 만들기</button>
+          <button class="text-ap mt-[6px] text-[14px]">계정 만들기</button>
           <button
-            class="bg-b57 text-a06 px-[24px] py-[10px] mt-[6px] ml-[40px]"
+            class="bg-b57 text-a06 px-[24px] py-[10px] mt-[6px] ml-[40px] rounded-[36px]"
           >
             다음
           </button>
@@ -92,10 +96,20 @@
 
       <!-- 아래요소 -->
       <div
-        class="text-white h-[84px] flex flex-row items-center justify-between w-[100%] px-[32px]"
+        class="text-white h-[84px] flex flex-row items-center justify-between w-[1040px] px-[16px]"
       >
-        <div>asdf</div>
-        <div>asdfdaf</div>
+        <div>
+          <!-- <label for="department">학과 선택:</label> -->
+          <select id="department" name="department" class="bg-darkgray">
+            <option value="컴퓨터공학과">한국어</option>
+            <option value="영어영문과">ENGLENGLISH</option>
+          </select>
+        </div>
+        <div class="flex flex-row gap-[32px] text-xs">
+          <div>도움말</div>
+          <div>개인정보처리방침</div>
+          <div>약관</div>
+        </div>
       </div>
     </div>
   </body>
