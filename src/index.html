@@ -46,8 +46,8 @@
             <div class="flex-col flex flex-wrap w-[484px]">
               <!-- 텍스트 -->
               <div class="text-white">
-                <span class="text-[44px]">로그인</span>
-                <div class="mt-[16px]">
+                <span data-key="login" class="text-[44px]">로그인</span>
+                <div data-key="login2" class="mt-[16px]">
                   Google 계정으로 로그인합니다. 이 계정은 브라우저의 다른 Google
                   앱에서 사용할 수 있습니다.
                 </div>
@@ -66,18 +66,22 @@
                 name="username"
                 type="text"
                 autocomplete="email"
+                data-key="input"
                 placeholder="이메일 또는 휴대전화"
                 class="bg-black text-white border border-white outline-offset-1 rounded w-[100%] h-[54px] mt-[24px] px-[15px] py-[13px]"
               />
-              <div class="text-ap text-sm mb-[32px] pt-[9px]">
+              <div
+                class="text-ap text-sm mb-[32px] pt-[9px]"
+                data-key="losteamil"
+              >
                 이메일을 잊으셨나요?
               </div>
               <div class="bg-bl text-sm pt-[9px]">
-                <span class="text-c4"
+                <span class="text-c4" data-key="guest"
                   >내 컴퓨터가 아닌가요? 게스트 모드를 사용하여 비공개로
                   로그인하세요.</span
                 >
-                <span class="text-ap"
+                <span class="text-ap" data-key="guest2"
                   >게스트 모드 사용 방법 자세히 알아보기</span
                 >
               </div>
@@ -85,9 +89,12 @@
           </div>
         </div>
         <div class="text-white flex justify-end mt-[32px]">
-          <button class="text-ap mt-[6px] text-[14px]">계정 만들기</button>
+          <button class="text-ap mt-[6px] text-[14px]" data-key="plus">
+            계정 만들기
+          </button>
           <button
             class="bg-b57 text-a06 px-[24px] py-[10px] mt-[6px] ml-[40px] rounded-[36px]"
+            data-key="next"
           >
             다음
           </button>
@@ -100,16 +107,17 @@
       >
         <div>
           <select id="department" name="department" class="bg-darkgray">
-            <option value="한국어">한국어</option>
-            <option value="영어">ENGLISH</option>
+            <option value="ko">한국어</option>
+            <option value="en">ENGLISH</option>
           </select>
         </div>
         <div class="flex flex-row gap-[32px] text-xs">
-          <div>도움말</div>
-          <div>개인정보처리방침</div>
-          <div>약관</div>
+          <div data-key="help">도움말</div>
+          <div data-key="privac">개인정보처리방침</div>
+          <div data-key="terms">약관</div>
         </div>
       </div>
     </div>
   </body>
+  <script src="app.js"></script>
 </html>
